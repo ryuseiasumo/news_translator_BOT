@@ -91,7 +91,7 @@ count_reply = 0
 if len(tweet_main) <= 140:
     tweet_content_list.append(tweet_main)
 else:
-    tweet_main = "タイトル:" + site_title + "\nこのニュースの日付:" + site_publishedAt #URLを除いた2つで考える
+    tweet_main = "タイトル:" + translated_title + "\nこのニュースの日付:" + site_publishedAt #URLを除いた2つで考える
     while True:
         tweet_main_i = tweet_main[count_reply*140:count_reply*140+140]
         len_main = len(tweet_main_i)
